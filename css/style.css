@@ -1,0 +1,103 @@
+.navbar-default .navbar-nav > li > ul > li > a nav {
+    text-transform: uppercase;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navbar a, .subnav a {
+    text-decoration: inherit;
+}
+.nav, .nav ul, .nav li {
+    list-style: none;
+}
+@media (min-width: 768px) {
+    .nav, .nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .nav {
+        float: left;
+        margin: 0;
+    }
+    .nav ul {
+        background: #f8f8f8;
+        position: absolute;
+        top: 3.10em;
+        left: -9999px;
+        opacity: 0;
+    }
+    .nav li {
+        float: left;
+        position: relative;
+    }
+    .nav li > a {
+        float: left;
+        padding: 16px;
+    }
+    .nav li > a:hover, .nav li > a:focus, {
+        background: #F0C425;
+    }
+    .nav li:focus > a, .nav li:hover > a {
+        background: #f8f8f8;
+    }
+    .nav > li:first-child > a {
+        border-left: 0;
+    }
+    .nav > li:last-child > a {
+        border-right: 0;
+    }
+    .nav li:hover ul, .nav li:focus ul, ul.show-menu {
+        left: 0;
+        opacity: 0.99;
+    }
+    .nav ul li {
+        float: none;
+        position: static;
+    }
+    .nav ul a {
+        float: none;
+        display: block;
+        color: #FFF;
+        font-size: 12px;
+        text-shadow: none;
+        border: 1px solid #e7e7e7;
+        border-width: 0 0 1px;
+        -webkit-transition: 0.1s linear all;
+    }
+    .nav ul, .nav ul li:last-child a {
+        border: 0;
+    }
+    .nav ul a:hover, .nav ul a:focus {
+        background: #1F2E54;
+        color: #777;
+        text-shadow: none;
+    }
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #777;
+    background-color: #16213C;
+}
+.navbar-toggle {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #F0C425;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1F2E54;
+}
+.navbar-default .navbar-nav > li > ul > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > ul > li > a:hover, .navbar-default .navbar-nav > li > ul > li > a:focus {
+    color: #000;
+    background: #f8f8f8;
+}
+.navbar-collapse {
+    max-height: 500px;
+}
