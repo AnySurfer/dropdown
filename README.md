@@ -3,6 +3,8 @@
 Based on: [http://simplyaccessible.com/examples/css-menu/option-2/](http://simplyaccessible.com/examples/css-menu/option-2/)
 and Bootstrap
 
+[Live demo](http://gijs.anysurfer.be/test/dropdown/)
+
 ## Features
 
 * Keyboard accessible
