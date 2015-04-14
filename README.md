@@ -7,9 +7,11 @@ and Bootstrap
 
 ## Features
 
+* HTML5 nav element with ARIA navigation landmark `<nav role="navigation">`
 * Keyboard accessible
 * The navigation is marked up as nested unordered lists and visible to screenreaders at all time, including the submenu-items. They are visually hidden off screen with CSS (left: -9999px;).
 * All links show up in a screenreaders link list.
+
 
 ## Screenreader tests
 
