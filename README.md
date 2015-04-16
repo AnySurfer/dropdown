@@ -1,4 +1,4 @@
-# Accessible en responsive dropdown for navigation
+# Accessible and responsive dropdown for navigation
 
 Based on: [http://simplyaccessible.com/examples/css-menu/option-2/](http://simplyaccessible.com/examples/css-menu/option-2/)
 and Bootstrap
