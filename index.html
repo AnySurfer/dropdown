@@ -17,13 +17,13 @@
         <div class="container narrow-nav">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Show Navigation</span>
+                    <span class="sr-only" >Show Navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="navbar-collapse in" style="height: auto;">
+            <div class="navbar-collapse collapse" style="height: auto;">
                 <nav role="navigation">
                     <ul class="nav navbar-nav">
                         <li>
@@ -94,8 +94,36 @@
             </div>
         </div>
     </div>
-    <div>
-    <p><a href="https://github.com/AnySurfer/dropdown">Clone in Gitbub</a></p>
+    <div class="container">
+      <h1>Accessible and responsive dropdown for navigation</h1>
+
+        <p>Based on: <a href="http://simplyaccessible.com/examples/css-menu/option-2/">http://simplyaccessible.com/examples/css-menu/option-2/</a> and Bootstrap</p>
+<p>Download on <a href="https://github.com/AnySurfer/dropdown">Github</a></p>
+<h2>Features</h2>
+
+<ul>
+    <li>Keyboard accessible</li>
+    <li>The navigation is marked up as nested unordered lists and visible to screenreaders at all time, including the submenu-items. <br> They are visually hidden off screen with CSS (left: -9999px;).</li>
+    <li>All links show up in a screenreaders link list.</li>
+</ul>
+
+<h2>Screenreader tests</h2>
+
+<ul>
+    <li>Jaws 13, 15 and 16 with IE9 in Windows 7</li>
+    <li>Jaws 13, 15, 16 with Firefox 35 in Windows 7</li>
+    <li>NVDA 2015.1 with IE9 in Windows 7</li>
+    <li>NVDA 2015.1 with Firefox 35 in Windows 7</li>
+    <li>VoiceOver 7 with Safari 8 in Mac OS X 10.10.3</li>
+    <li>VoiceOver with Safari 8 in iOS 8.3</li>
+</ul>
     </div>
+    <script>
+    $(function () {
+        $(".navbar-toggle").click(function(){
+            $( this ).children( ".sr-only" ).html($( this ).children( ".sr-only" ).html()=="Show Navigation" ? "Hide Navigation" : "Show Navigation");
+        });
+    });
+    </script>
 </body>
 </html>
